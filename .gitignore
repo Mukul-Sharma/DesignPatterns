@@ -10,3 +10,5 @@
 # Local IDEA workspace
 .idea/workspace.xml
 
+#Java Classes
+*.class
