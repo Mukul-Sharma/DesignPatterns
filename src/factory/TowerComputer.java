@@ -1,5 +1,6 @@
 package factory;
 
+import com.sun.javafx.beans.annotations.NonNull;
 import impl.BaseComputer;
 
 /**
@@ -8,7 +9,7 @@ import impl.BaseComputer;
  */
 public class TowerComputer extends BaseComputer {
 
-    protected TowerComputer(Cabinet mCabinet, Chassis mChassis) {
+    protected TowerComputer(@NonNull Cabinet mCabinet,@NonNull Chassis mChassis) {
         super(mCabinet, mChassis);
     }
 
@@ -28,6 +29,6 @@ public class TowerComputer extends BaseComputer {
 
     @Override
     public String toString() {
-        return "Tower Computer";
+        return "Tower Computer | " + super.toString();
     }
 }
