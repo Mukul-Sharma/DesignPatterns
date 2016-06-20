@@ -1,5 +1,5 @@
 To support addition of new operations in ComputerEquipment class without polluting the original, we can do the following :
-1 : Assuming ComputerEquipment is an interface we can create a new interface ExtendedComputerEquipment that includes additional
+1 : Assuming ComputerEquipment is an interface we can create a new interface ExtendedComputerEquipment that extends the original and includes additional
 operations
 2 : Create an abstract class that extends/inherits ComputerEquipment class/interface and add new operations in that
 3 : Use decorator pattern
